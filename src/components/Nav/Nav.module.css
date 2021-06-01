@@ -1,0 +1,30 @@
+.header {
+    width: 95px;
+    background-color: #002137;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: fixed;
+    z-index: 12;
+    top: 0;
+    font-size: 13px;
+}
+.img:nth-child(1) {
+    width: 20px;
+    height: 25px;
+}
+.text{
+    color: #fff;
+}
+.active {
+    background-color: #002c49;
+}
+.logo {
+    padding: 10px;
+}
+a {
+    margin-top: 10px;
+    width: 100%;
+    padding: 10px 5px;
+}

@@ -1,0 +1,69 @@
+.windowWrap {
+    position: fixed;
+    right: 0;
+    top: 60px;
+    width: 750px;
+    background-color: #ecf3f7;
+    height: 100%;
+}
+.header {
+    height: 50px;
+    background-color: #1a4876;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.title {
+    margin-left: 25px;
+}
+.close {
+    margin-right: 30px;
+    cursor: pointer;
+}
+.close:hover {
+    transform: scale(1.1);
+}
+.areaWrap {
+    display: flex;
+    flex-direction: column;
+    margin: 50px;
+
+}
+textarea {
+    width: 550px;
+    height: 125px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    word-break: break-word;
+    padding: 10px;
+    resize: none;
+}
+.areaTitle {
+    text-align: start;
+    color: #9f9ea7;
+    margin: 20px 0;
+}
+.name {
+    height: 70px;
+}
+.btn {
+    background: #008cf0;
+    color: #fff;
+    width: 140px;
+    border: none;
+    padding: 10px 38px;
+    border-radius: 20px;
+    cursor: pointer;
+    display: flex;
+    margin-top: 50px;
+    text-align: start;
+}
+.btn:hover {
+    transform: scale(1.05);
+}
+.error {
+    border: 1px solid red
+}
+

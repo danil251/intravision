@@ -1,0 +1,56 @@
+.wrap {
+    position: relative;
+}
+.btn {
+    background: #008cf0;
+    color: #fff;
+    border: none;
+    padding: 12px 37px;
+    border-radius: 20px;
+    cursor: pointer;
+    display: flex;
+    margin: 88px 0 10px 260px;
+    font-size: 15px;
+}
+.btn:hover {
+    transform: scale(1.05);
+}
+table {
+    border-collapse: collapse;
+    width: 100%;
+    table-layout: fixed;
+}
+th {
+    border-bottom: 2px solid #dae0e7;
+    padding: 10px 12px;
+    position: relative;
+    text-align: start;
+}
+
+th:before {
+    content: '';
+    position: absolute;
+    height: 20px;
+    background-color: #dae0e7;
+    right: 0;
+    width: 1px;
+}
+th:nth-child(4):before {
+    content: none;
+}
+thead th:nth-child(1) {
+    width: 125px;
+    text-align: center;
+}
+
+thead th:nth-child(2) {
+    width: 400px;
+}
+
+thead th:nth-child(3) {
+    width: 150px;
+}
+
+thead th:nth-child(4) {
+    width: 50%;
+}

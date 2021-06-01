@@ -1,0 +1,36 @@
+tr {
+    border-bottom: 2px solid #dae0e7;
+}
+td {
+    padding: 13px 0;
+    position: relative;
+    cursor: pointer;
+}
+td:nth-child(1) {
+    text-align: center;
+}
+
+td:nth-child(2) {
+    text-align: start;
+    padding-left: 15px;
+}
+
+td:nth-child(4) {
+    text-align: start;
+    padding-left: 15px;
+}
+.status {
+    border-radius: 20px;
+    padding: 3px 17px;
+    color: #fff;
+    font-size: 12px;
+    display: inline-block;
+}
+.priority {
+    width: 5px;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    border-radius: 20px;
+    left: 2px;
+}

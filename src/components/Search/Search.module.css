@@ -1,0 +1,22 @@
+.search {
+    height: 65px;
+    background-color: #d1e0ed;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 11;
+    display: flex;
+    align-items: center;
+}
+.input {
+    width: 680px;
+    height: 40px;
+    border-radius: 20px;
+    padding: 10px 40px 10px 20px;
+    border: 1px solid #4faffd;
+    outline: none;
+    margin-left: 112px;
+    background: url("../../assets/img/Search.png") no-repeat 647px #fff;
+    background-size: 20px;
+}
+
