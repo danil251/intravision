@@ -80,10 +80,11 @@ const ChangeWindow = () => {
                         setComment(e.currentTarget.value)
                     }}/>
                     <button className={s.btn} onClick={saveHandler} disabled={!comment.length}>Сохранить</button>
-                    {task.lifetimeItems.length? <div><div className={s.comment}>
-                        <div className={s.avatar}/>
-                        <span className={s.name}>{task.initiatorName}</span>
-                    </div>
+                    {task.lifetimeItems.length ? <div>
+                        <div className={s.comment}>
+                            <div className={s.avatar}/>
+                            <span className={s.name}>{task.initiatorName}</span>
+                        </div>
                         {comments}</div> : <div></div>}
 
 
