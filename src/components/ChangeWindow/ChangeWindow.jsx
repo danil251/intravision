@@ -6,7 +6,7 @@ import {formation} from "../../assets/formation";
 import CommentItem from "./CommentItem/CommentItem";
 
 
-const ChangeWindow = () => {
+const ChangeWindow = ({windowIsOpen}) => {
 
     const dispatch = useDispatch()
     const task = useSelector(state => state.tasks.task)
@@ -43,9 +43,8 @@ const ChangeWindow = () => {
         setComment('')
     }
 
-    const comments = task.lifetimeItems.map(m => m.comment !== '' ?
-        <CommentItem key={m.id} comment={m.comment} createdAt={m.createdAt}/> : null)
-    const tags = task.tags.map(m => <div className={s.tags} key={m.id}>{m.name}</div>)
+    const comments = task && task.lifetimeItems.map(m => m.comment !== '' ? <CommentItem key={m.id} comment={m.comment} createdAt={m.createdAt}/> : null)
+    const tags = task.tags && task.tags.map(m => <div className={s.tags} key={m.id}>{m.name}</div>)
     const statusItem = property.statuses.map(m => <div className={s.statusItem} onClick={(e) => {
         statusHandler(m.id)
     }}
@@ -66,7 +65,7 @@ const ChangeWindow = () => {
 
 
     return (
-        <div className={s.windowWrap}>
+        <div className={windowIsOpen ? s.windowWrap : s.winnWrap}>
             <div className={s.header}><span className={s.title}>№ {titleForm}</span>
                 <div className={s.taskName}>{task.name}</div>
                 <div className={s.close} onClick={createAnApplication}>X</div>
@@ -74,7 +73,7 @@ const ChangeWindow = () => {
             <div className={s.bodyWrap}>
                 <div className={s.areaWrap}>
                     <span className={s.areaTitle}>Описание</span>
-                    <div className={s.description}>{task.description} </div>
+                    <div className={s.description} >{task.description} </div>
                     <span className={s.areaTitle}>Добавление комментариев</span>
                     <textarea value={comment} onChange={(e) => {
                         setComment(e.currentTarget.value)
@@ -85,7 +84,7 @@ const ChangeWindow = () => {
                             <div className={s.avatar}/>
                             <span className={s.name}>{task.initiatorName}</span>
                         </div>
-                        {comments}</div> : <div></div>}
+                        {comments}</div> : <div/>}
 
 
                 </div>

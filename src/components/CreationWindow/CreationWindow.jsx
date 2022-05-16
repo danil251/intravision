@@ -3,7 +3,7 @@ import s from './CreationWindow.module.css'
 import {creationTasks, openWindowCreate} from "../../redux/tasks-reducer";
 import {useDispatch} from "react-redux";
 
-const CreationWindow = () => {
+const CreationWindow = ({windowIsOpen}) => {
     const dispatch = useDispatch()
     const [name, setName] = useState('')
     const [description, setDescription] = useState('')
@@ -24,12 +24,11 @@ const CreationWindow = () => {
             setErrorDescr(true)
             setErrorName(true)
         }
-
-
     }
 
+
     return (
-        <div className={s.windowWrap}>
+        <div className={windowIsOpen ? s.windowWrap : s.winnWrap}>
             <div className={s.header}><span className={s.title}>Новая заявка</span>
                 <div className={s.close} onClick={createAnApplication}>X</div>
             </div>

@@ -6,6 +6,16 @@
     background-color: #ecf3f7;
     height: 100%;
     overflow: auto;
+    transition: .3s;
+}
+.winnWrap {
+    width: 0;
+    position: fixed;
+    transition: .3s;
+    right: 0;
+    top: 60px;
+    background-color: #ecf3f7;
+    height: 100%;
 }
 .header {
     min-height: 50px;

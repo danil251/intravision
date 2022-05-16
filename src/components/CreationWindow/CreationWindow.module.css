@@ -5,6 +5,16 @@
     width: 750px;
     background-color: #ecf3f7;
     height: 100%;
+    transition: .3s;
+}
+.winnWrap {
+    width: 0;
+    position: fixed;
+    transition: .3s;
+    right: 0;
+    top: 60px;
+    background-color: #ecf3f7;
+    height: 100%;
 }
 .header {
     height: 50px;
