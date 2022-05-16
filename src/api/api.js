@@ -1,7 +1,7 @@
 import axios from 'axios'
 
 const instance = axios.create({
-    baseURL: 'http://intravision-task.test01.intravision.ru/'
+    baseURL: 'https://intravision-task.test01.intravision.ru/'
 })
 const tenantguid = 'a4f13660-eb8c-45f9-aefe-05dc05cf9b81'
 
